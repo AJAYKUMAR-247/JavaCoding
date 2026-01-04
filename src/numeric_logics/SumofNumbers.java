@@ -1,6 +1,4 @@
-package NumericLogics;
-
-import org.w3c.dom.ls.LSOutput;
+package numeric_logics;
 
 import java.util.Scanner;
 

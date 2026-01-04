@@ -1,9 +1,9 @@
-package ArrayList;
+package arraylist;
 
-import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.ArrayList;
 
-public class MaxValue {
+public class MinValue {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -13,16 +13,19 @@ public class MaxValue {
             list.add(sc.nextInt());
         }
 
-        maxValue(list);
+        minValue(list);
 
     }
 
-    public static void maxValue(ArrayList<Integer> list) {
-        int max = Integer.MIN_VALUE;
+    public static void minValue(ArrayList<Integer> list) {
+        int min = Integer.MAX_VALUE;
+
         for (int i = 0; i < list.size(); i++) {
-            if (max < list.get(i)) {
-                max = list.get(i);
+            if (min > list.get(i)) {
+                min = list.get(i);
             }
         }
+
+        System.out.println(min);
     }
 }

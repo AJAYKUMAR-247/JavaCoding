@@ -1,4 +1,4 @@
-package NumericLogics;
+package numeric_logics;
 
 import java.util.Arrays;
 import java.util.Scanner;
